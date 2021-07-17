@@ -1,0 +1,57 @@
+.btn {
+    border: 1px solid $primary-color;
+    &:hover {
+        color: $color-white;
+    }
+}
+
+.utl-btn-primary {
+    background: $main-bg-gradient;
+    color: $color-white;
+  }
+  
+  .utl-btn-secondary {
+    background-color: $color-light;
+    color: $color-grey;
+  }
+  
+  .utl-share-button {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .icon {
+      font-size: rem(18);
+    }
+  
+    &:hover {
+      color: $color-dark;
+    }
+  }
+  
+  .utl-btn-outline-primary {
+    color: $primary-color;
+    border: 1px solid $primary-color;
+  
+    &:hover {
+      background-color: $primary-color;
+      color: $color-white;
+    }
+  }
+  
+  .utl-btn-outline-white {
+    color: $color-white;
+    border: 1px solid $color-white;
+  }
+  
+  .utl-btn-bg-white {
+    // color: $color-white;
+    background-color: $color-white;
+    border: 1px solid $color-white;
+  }
