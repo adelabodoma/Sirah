@@ -70,6 +70,11 @@
     color: $color-white;
 }
 
+.heading-title {
+    font-size: rem(34);
+    font-family: $font-bold;
+}
+
 @include media-breakpoint-down(sm){
     .heading-1 {
         font-size: rem(25);

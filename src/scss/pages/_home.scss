@@ -1,0 +1,52 @@
+.about-us {
+    margin-top: 100px;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__buttons {
+        margin-top: 40px;
+
+        .btn {
+            margin-left: 10px;
+        }
+    }
+}
+
+
+.releases {
+    margin-top: 120px;
+    text-align: center;
+
+    &__cards {
+        margin-top: 40px;
+    }
+
+    &__card {
+        margin-bottom: 30px;
+
+        &__rate {
+            color: $color-yellow;
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid #F2F2F2;
+
+            span {
+                color: #A0A1A2;
+                display: inline-block;
+            }
+        }
+        &__price {
+            padding: 15px;
+            background-color: $color-white;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            font-family: $font-bold;
+            color: $secondary-color;
+            position: absolute;
+            right: 0;
+            top: 20px;
+        }
+    }
+}

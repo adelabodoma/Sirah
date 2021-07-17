@@ -1,370 +1,721 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="assets/css/style-rtl.min.css" />
+    <title>Sirah - Home</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
-    <link rel="stylesheet" href="assets/css/style-rtl.min.css">
-    <title>Sirah - Home </title>
-</head>
-
-<body>
+  <body>
     <button id="gotToTopButton" title="Go to top">
-        <i class="icon icon-down-arrow"></i>
+      <i class="icon icon-down-arrow"></i>
     </button>
 
     <div class="loader">
-        <div class="loader__item">
-            <img src="assets/img/logo.png" alt="Logo">
-            <div>
-            </div>
-        </div>
+      <div class="loader__item">
+        <img src="assets/img/logo.png" alt="Logo" />
+        <div></div>
+      </div>
     </div>
     <!-- HEADER SECTION START -->
     <header class="header">
-        <nav class="header__nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7 d-flex">
-                        <a href="" class="header__nav__logo">
-                            <img src="assets/img/logo.png" alt="Logo" class="header__nav__logo-img">
-                        </a>
-                        <ul class="header__nav__items">
-                            <li class="header__nav__item">
-                                <a href="#" class="header__nav__item__link">الرئيسية</a>
-                            </li>
-                            <li class="header__nav__item">
-                                <a href="#" class="header__nav__item__link">من نحن </a>
-                            </li>
-                            <li class="header__nav__item">
-                                <a href="#" class="header__nav__item__link">عن المؤلف </a>
-                            </li>
-                            <li class="header__nav__item">
-                                <a href="#" class="header__nav__item__link">الإصدارات </a>
-                            </li>
-                            <li class="header__nav__item">
-                                <a href="#" class="header__nav__item__link">اتصل بنا </a>
-                            </li>
-                            <li class="header__nav__item">
-                                <a href="#" class="header__nav__item__link">انضم الينا </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-5 header__nav__access">
-                       <a href="#" class="header__nav__search-button">
-                           <i class="icon icon-search"></i>
-                       </a>
-                        <button class="btn utl-btn-primary header__nav__login__button">تسجيل الدخول</button>
-                    </div>
-                </div>
+      <nav class="header__nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 d-flex">
+              <a href="" class="header__nav__logo">
+                <img
+                  src="assets/img/logo.png"
+                  alt="Logo"
+                  class="header__nav__logo-img"
+                />
+              </a>
+              <ul class="header__nav__items">
+                <li class="header__nav__item">
+                  <a href="#" class="header__nav__item__link">الرئيسية</a>
+                </li>
+                <li class="header__nav__item">
+                  <a href="#" class="header__nav__item__link">من نحن </a>
+                </li>
+                <li class="header__nav__item">
+                  <a href="#" class="header__nav__item__link">عن المؤلف </a>
+                </li>
+                <li class="header__nav__item">
+                  <a href="#" class="header__nav__item__link">الإصدارات </a>
+                </li>
+                <li class="header__nav__item">
+                  <a href="#" class="header__nav__item__link">اتصل بنا </a>
+                </li>
+                <li class="header__nav__item">
+                  <a href="#" class="header__nav__item__link">انضم الينا </a>
+                </li>
+              </ul>
             </div>
+            <div class="col-md-5 header__nav__access">
+              <form action="#" class="header__nav__search__form">
+                <input
+                  type="text"
+                  class="form-control header__nav__search__form__input"
+                  placeholder="كلمة البحث"
+                />
+                <a
+                  href="#"
+                  class="header__nav__search__form__button"
+                  id="openSearchBtn"
+                >
+                  <i class="icon icon-search"></i>
+                </a>
+              </form>
+              <button class="btn utl-btn-primary header__nav__login__button">
+                تسجيل الدخول
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header__mobile-nav">
+        <div
+          class="
+            container
+            header__mobile-nav__container
+            d-flex
+            align-items-center
+            justify-content-between
+          "
+        >
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="header__mobile-nav__burger-menu" id="openMenu">
+              <i class="icon icon-menu"></i>
+            </a>
+            <a href="#" class="header__mobile-nav__logo">
+              <img src="assets/img/logo.png" alt="Logo" />
+            </a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <i
+              class="icon icon-search header__mobile-nav__search-button"
+              id="openSearchBtnWithMobile"
+            ></i>
+            <a
+              href="#"
+              class="header__mobile-nav__account"
+              type="button"
+              id="changeLang"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              ‏
+              <i class="icon icon-user"></i>
+            </a>
+            <div
+              class="dropdown-menu header__mobile-nav__account-dropdown"
+              aria-labelledby="changeLang"
+            >
+              <a class="btn utl-btn-primary" href="#">إنشاء حساب جديد</a>
+              <a class="btn utl-btn-outline-primary" href="#">تسجيل الدخول</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="swiper-container header__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-image-container">
+                <!-- <img
+                  src="https://source.unsplash.com/random"
+                  alt="Lorem Image"
+                /> -->
+              </div>
+              <div class="header__main__content">
+                <div class="container">
+                  <div class="header__main__content__item">
+                    <h3 class="header__main__content__heading-1">
+                      السيرة <span>النبوية</span> في دقائق
+                    </h3>
+                    <p class="header__main__content__heading-2">
+                      أول كتيب جيبي شامل موثق في السيرة النبوية الشريفة، معتمد
+                      اعتمادًا كليًّا على القرآن الكريم والسنة الشريفة، حظى
+                      بقراءة وتدقيق أكثر من 300 عالم متخصص
+                    </p>
+                    <div class="header__main__buttons">
+                      <button class="btn utl-btn-primary">الإصدارات</button>
+                      <button class="btn utl-btn-secondary">
+                        معرفة المزيد
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-image-container">
+                <!-- <img
+                  src="https://source.unsplash.com/random"
+                  alt="Lorem Image"
+                /> -->
+              </div>
+              <div class="header__main__content">
+                <div class="container">
+                  <div class="header__main__content__item">
+                    <h3 class="header__main__content__heading-1">
+                      السيرة <span>النبوية</span> في دقائق
+                    </h3>
+                    <p class="header__main__content__heading-2">
+                      أول كتيب جيبي شامل موثق في السيرة النبوية الشريفة، معتمد
+                      اعتمادًا كليًّا على القرآن الكريم والسنة الشريفة، حظى
+                      بقراءة وتدقيق أكثر من 300 عالم متخصص
+                    </p>
+                    <div class="header__main__buttons">
+                      <button class="btn utl-btn-primary">الإصدارات</button>
+                      <button class="btn utl-btn-secondary">
+                        معرفة المزيد
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-image-container">
+                <!-- <img
+                  src="https://source.unsplash.com/random"
+                  alt="Lorem Image"
+                /> -->
+              </div>
+              <div class="header__main__content">
+                <div class="container">
+                  <div class="header__main__content__item">
+                    <h3 class="header__main__content__heading-1">
+                      السيرة <span>النبوية</span> في دقائق
+                    </h3>
+                    <p class="header__main__content__heading-2">
+                      أول كتيب جيبي شامل موثق في السيرة النبوية الشريفة، معتمد
+                      اعتمادًا كليًّا على القرآن الكريم والسنة الشريفة، حظى
+                      بقراءة وتدقيق أكثر من 300 عالم متخصص
+                    </p>
+                    <div class="header__main__buttons">
+                      <button class="btn utl-btn-primary">الإصدارات</button>
+                      <button class="btn utl-btn-secondary">
+                        معرفة المزيد
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="header__mobile">
+        <nav class="nav-drill">
+          <a href="#" id="closeMenu">x</a>
+          <ul class="nav-items nav-level-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> الرئيسية </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> من نحن </a>
+            </li>
+            <li class="nav-item nav-expand">
+              <a class="nav-link nav-expand-link" href="#"> المركز الإعلامي </a>
+              <ul class="nav-items nav-expand-content">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> برنامج رقم 1 </a>
+                </li>
+                <li class="nav-item nav-expand">
+                  <a class="nav-link nav-expand-link" href="#">
+                    برنامج رقم 1
+                  </a>
+                  <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-expand">
+              <a class="nav-link nav-expand-link" href="#"> مركز الوسائط </a>
+              <ul class="nav-items nav-expand-content">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> برنامج رقم 1 </a>
+                </li>
+                <li class="nav-item nav-expand">
+                  <a class="nav-link nav-expand-link" href="#">
+                    برنامج رقم 1
+                  </a>
+                  <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> اتصل بنا </a>
+            </li>
+
+            <a
+              href="#"
+              class="header__mobile__change-lang utl-down-arrow mt-5 mx-3"
+              type="button"
+              id="changeLang"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              ‏ تغيير اللغة</a
+            >
+            <div class="dropdown-menu" aria-labelledby="changeLang">
+              <a class="dropdown-item" href="#">عربي</a>
+              <a class="dropdown-item" href="#">English</a>
+            </div>
+            <ul class="social-links mt-5 mx-3">
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-youtube"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-instagram"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-twitter"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </ul>
         </nav>
-
-        <div class="header__mobile-nav">
-            <div class="container header__mobile-nav__container d-flex align-items-center justify-content-between">
-                <div class="d-flex align-items-center justify-content-between">
-                    <a href="#" class="header__mobile-nav__burger-menu" id="openMenu">
-                        <i class="icon icon-menu"></i>
-                    </a>
-                    <a href="#" class="header__mobile-nav__logo">
-                        <img src="assets/img/logo.png" alt="Logo">
-                    </a>
-                </div>
-                <div class="d-flex align-items-center justify-content-between">
-                    <i class="icon icon-search header__mobile-nav__search-button" id="openSearchBtnWithMobile"></i>
-                    <a href="#" class="header__mobile-nav__account" type="button" id="changeLang" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false"> ‏
-                        <i class="icon icon-user"></i>
-                    </a>
-                    <div class="dropdown-menu header__mobile-nav__account-dropdown" aria-labelledby="changeLang">
-                        <a class="btn utl-btn-primary" href="#">إنشاء حساب جديد</a>
-                        <a class="btn utl-btn-outline-primary" href="#">تسجيل الدخول</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header__main">
-            <div class="swiper-container header__swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper-image-container">
-                            <img src="https://source.unsplash.com/random" alt="Lorem Image">
-                        </div>
-                        <div class="header__main__content">
-                            <div class="container">
-                                <h1 class="header__main__content__heading">على أرض العاصمة</h1>
-                                <h3 class="header__main__content__heading-1">الإندونيسية جاكرتا</h3>
-                                <p class="header__main__content__heading-2">معارض ومتاحف للسيرة النبوية والحضارة
-                                    الإسلامية تفتتح فرعها الدائم.. برعاية رابطة العالم الإسلامي</p>
-                                <button class="btn btn-lg utl-btn-primary">معرفة المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-image-container">
-                            <img src="https://images.unsplash.com/photo-1624243225303-261cc3cd2fbc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max" alt="Lorem Image">
-                        </div>
-                        <div class="header__main__content">
-                            <div class="container">
-                                <h1 class="header__main__content__heading">على أرض العاصمة</h1>
-                                <h3 class="header__main__content__heading-1">الإندونيسية جاكرتا</h3>
-                                <p class="header__main__content__heading-2">معارض ومتاحف للسيرة النبوية والحضارة
-                                    الإسلامية تفتتح فرعها الدائم.. برعاية رابطة العالم الإسلامي</p>
-                                <button class="btn btn-lg utl-btn-primary">معرفة ألمزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-image-container">
-                            <img src="assets/img/hero.png" alt="Lorem Image">
-                        </div>
-                        <div class="header__main__content">
-                            <div class="container">
-                                <h1 class="header__main__content__heading">على أرض العاصمة</h1>
-                                <h3 class="header__main__content__heading-1">الإندونيسية جاكرتا</h3>
-                                <p class="header__main__content__heading-2">معارض ومتاحف للسيرة النبوية والحضارة
-                                    الإسلامية تفتتح فرعها الدائم.. برعاية رابطة العالم الإسلامي</p>
-                                <button class="btn btn-lg utl-btn-primary">معرفة المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-        <div class="header__mobile">
-            <nav class="nav-drill">
-                <a href="#" id="closeMenu">x</a>
-                <ul class="nav-items nav-level-1">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            الرئيسية
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            من نحن
-                        </a>
-                    </li>
-                    <li class="nav-item nav-expand">
-                        <a class="nav-link nav-expand-link" href="#">
-                            المركز الإعلامي
-                        </a>
-                        <ul class="nav-items nav-expand-content">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    برنامج رقم 1
-                                </a>
-                            </li>
-                            <li class="nav-item nav-expand">
-                                <a class="nav-link nav-expand-link" href="#">
-                                    برنامج رقم 1
-                                </a>
-                                <ul class="nav-items nav-expand-content">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">
-                                            برنامج فرعي رقم 1
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">
-                                            برنامج فرعي رقم 1
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">
-                                            برنامج فرعي رقم 1
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item nav-expand">
-                        <a class="nav-link nav-expand-link" href="#">
-                            مركز الوسائط
-                        </a>
-                        <ul class="nav-items nav-expand-content">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    برنامج رقم 1
-                                </a>
-                            </li>
-                            <li class="nav-item nav-expand">
-                                <a class="nav-link nav-expand-link" href="#">
-                                    برنامج رقم 1
-                                </a>
-                                <ul class="nav-items nav-expand-content">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">
-                                            برنامج فرعي رقم 1
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">
-                                            برنامج فرعي رقم 1
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">
-                                            برنامج فرعي رقم 1
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            اتصل بنا
-                        </a>
-                    </li>
-
-                    <a href="#" class="header__mobile__change-lang utl-down-arrow mt-5 mx-3" type="button"
-                        id="changeLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ‏
-                        تغيير
-                        اللغة</a>
-                    <div class="dropdown-menu" aria-labelledby="changeLang">
-                        <a class="dropdown-item" href="#">عربي</a>
-                        <a class="dropdown-item" href="#">English</a>
-                    </div>
-                    <ul class="social-links mt-5 mx-3">
-                        <li class="social-links__item">
-                            <a href="#" class="social-links__item__link">
-                                <i class="icon icon-youtube"></i>
-                            </a>
-                        </li>
-                        <li class="social-links__item">
-                            <a href="#" class="social-links__item__link">
-                                <i class="icon icon-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="social-links__item">
-                            <a href="#" class="social-links__item__link">
-                                <i class="icon icon-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="social-links__item">
-                            <a href="#" class="social-links__item__link">
-                                <i class="icon icon-facebook"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </ul>
-            </nav>
-
-        </div>
+      </div>
     </header>
     <!-- HEADER SECTION END -->
+
+    <!-- ABOUT US SECTION START -->
+    <section class="about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- <img class="w-100" src="https://source.unsplash.com/random" alt="About Us"> -->
+            <h2>Image Here</h2>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="heading-title about-us__title">من نحن</h2>
+            <p>
+              حملةٌ لنشر مليار (1,000,000,000) نسخةٍ حول العالم من كتيب السيرة
+              النبوية في دقائق، الذي قام بتأليفه فضيلة الدكتور/ناصر بن مسفر
+              القرشي الزهراني؛ مؤسس المشروع الوقفي الإنساني العالمي: {السلام
+              عليك أيها النبي}، والذي قرأه ودققه أكثر من مائتي عالِم حول العالم.
+            </p>
+            <div class="about-us__buttons">
+                <button class="btn utl-btn-primary">الإصدارات</button>
+                <button class="btn utl-btn-secondary">
+                  معرفة المزيد
+                </button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT US SECTION END -->
+
+    <!-- RELEASES US SECTION START -->
+    <section class="releases">
+        <h2 class="heading-title text-center mb-4">الإصدارات</h2>
+        <p>نص بديل للوصف نص بديل للوصف نص بديل للوصف نص بديل للوصف</p>
+
+        <div class="container">
+            <div class="releases__cards">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card releases__card">
+                            <a href="" class="position-relative">
+                                <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
+                                <span class="releases__card__price">‏10 ريال</span>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title heading-bold-2">السيرة النبوية في دقائق</h5>
+                                <p class="heading-3-grey">كُتيِّب جيبيّ صغير الحجم عظيم الفائدة، يشتمل على السيرة النبوية الشريفة</p>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏10 مشاهدات</span>
+                                    </h2>
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏30 تحميل</span>
+                                    </h2>
+                                </div>
+                                <div class="releases__card__rate">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <span>(5.5)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card releases__card">
+                            <a href="" class="position-relative">
+                                <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
+                                <span class="releases__card__price">‏10 ريال</span>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title heading-bold-2">السيرة النبوية في دقائق</h5>
+                                <p class="heading-3-grey">كُتيِّب جيبيّ صغير الحجم عظيم الفائدة، يشتمل على السيرة النبوية الشريفة</p>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏10 مشاهدات</span>
+                                    </h2>
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏30 تحميل</span>
+                                    </h2>
+                                </div>
+                                <div class="releases__card__rate">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <span>(5.5)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card releases__card">
+                            <a href="" class="position-relative">
+                                <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
+                                <span class="releases__card__price">‏10 ريال</span>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title heading-bold-2">السيرة النبوية في دقائق</h5>
+                                <p class="heading-3-grey">كُتيِّب جيبيّ صغير الحجم عظيم الفائدة، يشتمل على السيرة النبوية الشريفة</p>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏10 مشاهدات</span>
+                                    </h2>
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏30 تحميل</span>
+                                    </h2>
+                                </div>
+                                <div class="releases__card__rate">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <span>(5.5)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card releases__card">
+                            <a href="" class="position-relative">
+                                <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
+                                <span class="releases__card__price">‏10 ريال</span>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title heading-bold-2">السيرة النبوية في دقائق</h5>
+                                <p class="heading-3-grey">كُتيِّب جيبيّ صغير الحجم عظيم الفائدة، يشتمل على السيرة النبوية الشريفة</p>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏10 مشاهدات</span>
+                                    </h2>
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏30 تحميل</span>
+                                    </h2>
+                                </div>
+                                <div class="releases__card__rate">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <span>(5.5)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card releases__card">
+                            <a href="" class="position-relative">
+                                <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
+                                <span class="releases__card__price">‏10 ريال</span>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title heading-bold-2">السيرة النبوية في دقائق</h5>
+                                <p class="heading-3-grey">كُتيِّب جيبيّ صغير الحجم عظيم الفائدة، يشتمل على السيرة النبوية الشريفة</p>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏10 مشاهدات</span>
+                                    </h2>
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏30 تحميل</span>
+                                    </h2>
+                                </div>
+                                <div class="releases__card__rate">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <span>(5.5)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card releases__card">
+                            <a href="" class="position-relative">
+                                <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
+                                <span class="releases__card__price">‏10 ريال</span>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title heading-bold-2">السيرة النبوية في دقائق</h5>
+                                <p class="heading-3-grey">كُتيِّب جيبيّ صغير الحجم عظيم الفائدة، يشتمل على السيرة النبوية الشريفة</p>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏10 مشاهدات</span>
+                                    </h2>
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏30 تحميل</span>
+                                    </h2>
+                                </div>
+                                <div class="releases__card__rate">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <span>(5.5)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card releases__card">
+                            <a href="" class="position-relative">
+                                <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
+                                <span class="releases__card__price">‏10 ريال</span>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title heading-bold-2">السيرة النبوية في دقائق</h5>
+                                <p class="heading-3-grey">كُتيِّب جيبيّ صغير الحجم عظيم الفائدة، يشتمل على السيرة النبوية الشريفة</p>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏10 مشاهدات</span>
+                                    </h2>
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏30 تحميل</span>
+                                    </h2>
+                                </div>
+                                <div class="releases__card__rate">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <span>(5.5)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card releases__card">
+                            <a href="" class="position-relative">
+                                <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
+                                <span class="releases__card__price">‏10 ريال</span>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title heading-bold-2">السيرة النبوية في دقائق</h5>
+                                <p class="heading-3-grey">كُتيِّب جيبيّ صغير الحجم عظيم الفائدة، يشتمل على السيرة النبوية الشريفة</p>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏10 مشاهدات</span>
+                                    </h2>
+                                    <h2 class="d-flex align-items-center">
+                                        <i class="icon icon-location ml-2"></i>
+                                        <span class="heading-3">‏30 تحميل</span>
+                                    </h2>
+                                </div>
+                                <div class="releases__card__rate">
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <i class="icon icon-star"></i>
+                                    <span>(5.5)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn utl-btn-outline-primary">مشاهدة جميع الإصدارات</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- RELEASES US SECTION END -->
 
 
     <!-- FOOTER SECTION START -->
     <footer class="footer">
-
-        <div class="container position-relative">
-            <div class="footer__quote">
-                <img class="footer__quote__image" src="assets/img/footer-quote.png" alt="Logo">
-                <p class="footer__quote__text">التعريف بخاتم الأنبياء وسيد المرسلين، صلوات الله وسلامه عليه، ونشر سيرته
-                    الشريفة وسُنّته الصحيحة، وتقديم رسالته الوسطية الخالدة للعالم صافيةً نقيةً، بأحدث وسائل وتقنيات
-                    العرض الحديثة.</p>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-4 col-lg-3">
-                    <ul class="footer__list">
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">مَن نحن</a>
-                        </li>
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">آخر الأخبار</a>
-                        </li>
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">في عيون الصحافة والإعلام </a>
-                        </li>
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">في عيون الزائرين</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <ul class="footer__list">
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">معرض الفيديو</a>
-                        </li>
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">معرض الصور</a>
-                        </li>
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">الأسئلة الشائعة</a>
-                        </li>
-                        <li class="footer__list__item">
-                            <a href="" class="footer__list__item__link heading-3">اتصل بنا</a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="col-12 col-md-4 col-lg-6">
-                    <h2 class="heading-bold-3">كن على تواصل معنا</h2>
-                    <form action="" class="footer__form">
-                        <input class="footer__form__input" type="text" placeholder="البريد الإلكتروني">
-                        <button class="btn utl-btn-primary footer__form__button">إشتراك</button>
-                    </form>
-                </div>
-
-            </div>
-
-            <div class="footer__copy-rights">
-                <h2 class="footer__copy-rights__heading"> ©جميع الحقوق محفوظة لموقع المعرض والمتحف الدولى 2021</h2>
-                <ul class="social-links">
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__item__link">
-                            <i class="icon icon-youtube"></i>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__item__link">
-                            <i class="icon icon-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__item__link">
-                            <i class="icon icon-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__item__link">
-                            <i class="icon icon-facebook"></i>
-                        </a>
-                    </li>
-                </ul>
-                <img src="assets/img/sponsor.png" alt="Sponsor">
-            </div>
+      <div class="container position-relative">
+        <div class="footer__quote">
+          <img
+            class="footer__quote__image"
+            src="assets/img/footer-quote.png"
+            alt="Logo"
+          />
+          <p class="footer__quote__text">
+            التعريف بخاتم الأنبياء وسيد المرسلين، صلوات الله وسلامه عليه، ونشر
+            سيرته الشريفة وسُنّته الصحيحة، وتقديم رسالته الوسطية الخالدة للعالم
+            صافيةً نقيةً، بأحدث وسائل وتقنيات العرض الحديثة.
+          </p>
         </div>
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <ul class="footer__list">
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >مَن نحن</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >آخر الأخبار</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >في عيون الصحافة والإعلام
+                </a>
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >في عيون الزائرين</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <ul class="footer__list">
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >معرض الفيديو</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >معرض الصور</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >الأسئلة الشائعة</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >اتصل بنا</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-lg-6">
+            <h2 class="heading-bold-3">كن على تواصل معنا</h2>
+            <form action="" class="footer__form">
+              <input
+                class="footer__form__input"
+                type="text"
+                placeholder="البريد الإلكتروني"
+              />
+              <button class="btn utl-btn-primary footer__form__button">
+                إشتراك
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer__copy-rights">
+          <h2 class="footer__copy-rights__heading">
+            ©جميع الحقوق محفوظة لموقع المعرض والمتحف الدولى 2021
+          </h2>
+          <ul class="social-links">
+            <li class="social-links__item">
+              <a href="#" class="social-links__item__link">
+                <i class="icon icon-youtube"></i>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="#" class="social-links__item__link">
+                <i class="icon icon-instagram"></i>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="#" class="social-links__item__link">
+                <i class="icon icon-twitter"></i>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="#" class="social-links__item__link">
+                <i class="icon icon-facebook"></i>
+              </a>
+            </li>
+          </ul>
+          <img src="assets/img/sponsor.png" alt="Sponsor" />
+        </div>
+      </div>
     </footer>
     <!-- FOOTER SECTION END -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/jquery.fancybox.min.js"></script>
@@ -373,6 +724,5 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/app.js"></script>
-</body>
-
+  </body>
 </html>

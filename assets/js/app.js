@@ -68,8 +68,8 @@ jQuery(document).ready(function ($) {
 
   // SEARCH FUNCTIONALITY
   $('#openSearchBtn').on('click', () => {
-    $('.header__nav__search').toggle();
-    $('body').addClass('backdrop');
+    $('.header__nav__search__form').addClass('header__nav__search__form--active');
+    // $('body').addClass('backdrop');
   })
 
 

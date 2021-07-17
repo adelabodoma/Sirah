@@ -1,5 +1,5 @@
 .btn {
-    border: 1px solid $primary-color;
+    border: 1px solid $secondary-color;
     &:hover {
         color: $color-white;
     }
@@ -12,7 +12,9 @@
   
   .utl-btn-secondary {
     background-color: $color-light;
-    color: $color-grey;
+    color: $primary-color;
+    box-shadow: $main-box-shadow;
+    border: 0;
   }
   
   .utl-share-button {
