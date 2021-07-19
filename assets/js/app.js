@@ -53,13 +53,10 @@ jQuery(document).ready(function ($) {
   });
 
 
-  const MediaSwiper = new Swiper('.media-center__swiper', {
+  const MediaSwiperImages = new Swiper('.media-center__swiper__images', {
     slidesPerView: 5,
     spaceBetween: 10,
-    navigation: {
-      nextEl: ".media-center__swiper .swiper-button-next",
-      prevEl: ".media-center__swiper .swiper-button-prev",
-    },
+
     breakpoints: {
       // when window width is >= 320px
       320: {
@@ -81,32 +78,16 @@ jQuery(document).ready(function ($) {
         slidesPerView: 4,
         spaceBetween: 20
       },
-    },
-    on: {
-      init: function () {
-      },
-      resize: function () {
-      }
     }
-  })
+  });
+
 
   const MediaSwiperVideo = new Swiper('.media-center__swiper__video', {
     slidesPerView: 5,
     spaceBetween: 10,
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: false,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
     navigation: {
-      nextEl: ".media-center__swiper__video .swiper-button-next",
-      prevEl: ".media-center__swiper__video .swiper-button-prev",
+      nextEl: ".media-center__swiper__video__controls .swiper-button-next",
+      prevEl: ".media-center__swiper__video__controls .swiper-button-prev",
     },
     breakpoints: {
       // when window width is >= 320px
@@ -129,12 +110,6 @@ jQuery(document).ready(function ($) {
         slidesPerView: 4,
         spaceBetween: 20
       },
-    },
-    on: {
-      init: function () {
-      },
-      resize: function () {
-      }
     }
   });
 
