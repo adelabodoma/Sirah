@@ -1,25 +1,145 @@
 jQuery(document).ready(function ($) {
   const swiper = new Swiper(".header__swiper", {
     slidesPerView: 1,
-    direction: "vertical",
+    // direction: "vertical",
     spaceBetween: 30,
-    effect: "fade",
+    // effect: "fade",
     pagination: {
-      el: ".header__swiper .swiper-pagination",
+      el: ".header .swiper-pagination",
       clickable: true,
+    },
+    navigation: {
+      nextEl: ".header__navigation .swiper-button-next",
+      prevEl: ".header__navigation .swiper-button-prev",
+    },
+  });
+
+
+  const versionSliders = new Swiper('.version__slider', {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    pagination: {
+      el: ".version .swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 991px
+      991: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      },
+    },
+    on: {
+      init: function () {
+      },
+      resize: function () {
+      }
     }
   });
 
 
-  const newsSwiper = new Swiper(".news-details__gallery__swiper", {
-    slidesPerView: 1,
+  const MediaSwiper = new Swiper('.media-center__swiper', {
+    slidesPerView: 5,
+    spaceBetween: 10,
     navigation: {
-      nextEl: ".news-details__gallery__swiper__controls .swiper-button-next",
-      prevEl: ".news-details__gallery__swiper__controls .swiper-button-prev"
+      nextEl: ".media-center__swiper .swiper-button-next",
+      prevEl: ".media-center__swiper .swiper-button-prev",
     },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 991px
+      991: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      },
+    },
+    on: {
+      init: function () {
+      },
+      resize: function () {
+      }
+    }
+  })
+
+  const MediaSwiperVideo = new Swiper('.media-center__swiper__video', {
+    slidesPerView: 5,
+    spaceBetween: 10,
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: false,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    navigation: {
+      nextEl: ".media-center__swiper__video .swiper-button-next",
+      prevEl: ".media-center__swiper__video .swiper-button-prev",
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 991px
+      991: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      },
+    },
+    on: {
+      init: function () {
+      },
+      resize: function () {
+      }
+    }
   });
 
-  const sliderSelectors = ['.fairs__swiper', '.temp-fairs__swiper', '.youtube__swiper', '.partners__swiper', '.partners-2__swiper', '.sponsor__swiper', '.sponsor-2__swiper']
+
+  const sliderSelectors = ['.partners__swiper', '.partners-2__swiper', '.sponsor__swiper', '.sponsor-2__swiper']
 
   sliderSelectors.forEach(selector => {
     const slide = new Swiper(selector, {

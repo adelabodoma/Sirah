@@ -3,15 +3,16 @@
   align-items: center;
 
   .icon {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid$color-white;
+    // border: 1px solid$color-white;
     color: $color-white;
+    background: $main-bg-gradient;
     border-radius: 50%;
-    font-size: rem(11);
+    font-size: rem(15);
   }
 
   &__item {

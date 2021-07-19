@@ -55,7 +55,7 @@
 .heading-bold-1 {
     font-size: rem(16);
     font-family: $font-bold;
-    color: $color-dark;
+    color: $primary-color;
 }
 
 .heading-bold-2 {
@@ -73,7 +73,10 @@
 .heading-title {
     font-size: rem(34);
     font-family: $font-bold;
+    line-height: 60px;
 }
+
+
 
 @include media-breakpoint-down(sm){
     .heading-1 {

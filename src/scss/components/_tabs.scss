@@ -1,0 +1,33 @@
+.utl-tabs {
+    &__items {
+      border-bottom: 1px solid #E3E3E3;
+      background-color: #F4F8F6;
+      justify-content: center;
+      margin-bottom: 30px;
+      margin-top: 40px;
+    }
+
+    &__item {
+      &__link {
+        font-size: rem(14);
+        font-family: $font-bold;
+        color: $color-grey;
+
+        &.active {
+          padding: 10px 30px;
+          background-color: $primary-color;
+          color: $color-white;
+          border-radius: 6px 6px 0px 0px;
+        }
+        &:hover {
+          color: $color-dark;
+        }
+      }
+
+      &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
