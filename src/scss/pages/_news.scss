@@ -1,0 +1,47 @@
+.news {
+    &-details {
+        margin-top: 40px;
+        &::before {
+          display: none;
+        }
+    
+        &__content {
+          &__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+          }
+    
+          &__text {
+            line-height: 36px;
+            font-size: rem(16);
+            margin-bottom: 40px;
+          }
+    
+          &__title {
+            margin-bottom: 40px;
+          }
+    
+          .date {
+            font-size: rem(80);
+            font-family: $font-bold;
+          }
+    
+          .icon {
+            margin-#{$right}: 10px;
+          }
+    
+          .share-icon {
+            font-size: rem(30);
+          }
+        }
+
+        &__gallery {
+            &__image {
+                width: 100%;
+                border-radius: 16px;
+            }
+        }
+      }
+}
