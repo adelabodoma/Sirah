@@ -1,0 +1,28 @@
+.publication-details {
+    &__rate {
+        color: $color-yellow;
+    }
+
+    &__gallery{
+        padding: 30px 50px;
+        background-color: #E8F1ED;
+        text-align: center;
+        border-radius: 16px;
+    }
+
+    &__image {
+        width: auto;
+        // height: 291px;
+        // height: 300px;
+    }
+
+    &__statistics {
+        display: flex;
+        align-items: center;
+        color: $secondary-color;
+
+        h2:first-child {
+            margin-left: 20px;
+        }
+    }
+}
