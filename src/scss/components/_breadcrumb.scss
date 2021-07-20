@@ -1,9 +1,10 @@
 .breadcrumb-container {
   // height: 56px;
   padding: 10px 0;
-  background-color: $color-light-grey-3;
+  // background-color: $color-light-grey-3;
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
   @include media-breakpoint-down(lg) {
     margin-top: 85px;
   }
@@ -23,8 +24,8 @@
         &::after {
           @include addIcon($icon-left-arrow, 10px);
           #{$right}: -18px;
-          top: 5px;
-          color: #000;
+          top: 8px;
+          color: #a0a1a2;
           position: absolute;
         }
 
@@ -43,13 +44,51 @@
     }
 
     &__link {
-      color: #000;
+      color: #a0a1a2;
       font-size: rem(14);
       text-decoration: none;
+      display: flex;
+      align-items: center;
     }
 
     &--mb-0 {
       margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: rem(34);
+    font-family: $font-bold;
+    color: $color-white;
+    margin-top: 20px;
+  }
+
+  &--with-header {
+    padding-bottom: 40px;
+    background-image: url(../img/breadcrumb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .breadcrumb__item:not(:last-child)::after {
+      color: #fff;
+    }
+
+    .breadcrumb {
+      .breadcrumb__item {
+        .breadcrumb__link {
+          color: $color-white;
+        }
+
+        &:not(:last-child) {
+          .breadcrumb__link {
+            color: $color-white;
+
+            &:hover {
+              color: #000 !important;
+            }
+          }
+        }
+      }
     }
   }
 }
