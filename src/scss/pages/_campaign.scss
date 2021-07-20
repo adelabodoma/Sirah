@@ -1,0 +1,28 @@
+.campaign {
+    .heading-1 {
+        width: 70%;
+    }
+
+  .FAQ {
+    margin-top: -90px;
+
+    &__accordion {
+      width: 90%;
+      margin: 0 auto;
+
+    }
+    @include media-breakpoint-down(sm){
+        margin-top: 30px;
+        &__accordion {
+            width: 100%;
+        }
+    }
+  }
+
+  @include media-breakpoint-down(sm){
+    .heading-1 {
+        width: 100%;
+        font-size: rem(20);
+    }
+}
+}

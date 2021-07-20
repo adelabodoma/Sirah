@@ -10,8 +10,6 @@
 
 @import "abstracts/helpers";
 
-
-
 // COMPONENT
 @import "components/carousel", "components/social-links", "components/scroll",
   "components/dropdown", "components/spinner", "components/mobile-menu",
@@ -19,7 +17,8 @@
   "components/card", "components/buttons", "components/tabs", "components/modal";
 
 // PAGES
-@import "pages/home", "pages/login", "pages/multi-media";
+@import "pages/home", "pages/login", "pages/multi-media", "pages/FAQ",
+  "pages/contact-us", "pages/campaign", "pages/download-app", "pages/about-us";
 
 // LAYOUT
 @import "layout/header", "layout/footer";

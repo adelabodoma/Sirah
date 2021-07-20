@@ -1,0 +1,11 @@
+.download-app {
+    &__container {
+        background: url(../img/download-app.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 50px;
+        border-radius: 16px;
+    }
+}

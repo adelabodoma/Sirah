@@ -3,6 +3,7 @@
     color: $color-dark;
     font-family: $font-bold;
     margin-bottom: 30px;
+    line-height: 1.5;
 }
 
 .heading-2 {
@@ -56,6 +57,10 @@
     font-size: rem(16);
     font-family: $font-bold;
     color: $primary-color;
+}
+.heading-bold-dark {
+    font-size: rem(16);
+    font-family: $font-bold;
 }
 
 .heading-bold-2 {
