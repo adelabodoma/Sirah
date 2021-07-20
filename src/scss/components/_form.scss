@@ -19,12 +19,16 @@
 .form-input {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border: 1px solid $color-grey-dark;
+  border: 1px solid #E2E2E2;
   border-radius: 6px;
 
   &:focus {
     border-color: inherit;
     box-shadow: none;
+  }
+
+  &::placeholder {
+    color: #CFCFCF;
   }
 }
 
@@ -50,5 +54,8 @@
     z-index: 99;
     cursor: pointer;
     border: 1px solid transparent;
+  }
+  &::placeholder {
+    color: #CFCFCF;
   }
 }

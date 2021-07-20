@@ -16,10 +16,10 @@
 @import "components/carousel", "components/social-links", "components/scroll",
   "components/dropdown", "components/spinner", "components/mobile-menu",
   "components/form", "components/breadcrumb", "components/pagination",
-  "components/card", "components/buttons", "components/tabs";
+  "components/card", "components/buttons", "components/tabs", "components/modal";
 
 // PAGES
-@import "pages/home";
+@import "pages/home", "pages/login", "pages/multi-media";
 
 // LAYOUT
 @import "layout/header", "layout/footer";

@@ -38,7 +38,7 @@
 
 .utl-form-label {
   font-size: rem(14);
-  font-family: $font-bold;
+  // font-family: $font-bold;
   margin-bottom: 10px;
 }
 
@@ -156,4 +156,11 @@
 
 .utl-color-yellow {
   color: #C8B26F;
+}
+
+.utl-align-element {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }

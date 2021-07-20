@@ -21,12 +21,12 @@
         transition: $transition-type;
 
         &.active {
-            background-color: $primary-color;
+            background: $main-bg-gradient;
             color: #fff;
         }
 
         &:hover {
-            background-color: $primary-color;
+            background: $main-bg-gradient;
             color: $color-white;
         }
     }

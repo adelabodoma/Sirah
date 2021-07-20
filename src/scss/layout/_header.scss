@@ -1,9 +1,12 @@
 .header {
+  box-shadow: $main-box-shadow;
+
   &__nav {
     background-color: $color-white;
     color: $color-grey;
     padding: 25px 0;
     box-shadow: $main-box-shadow;
+    border-bottom: 1px solid #E2E2E2;
 
     &__logo {
       margin-#{$right}: 40px;
@@ -314,6 +317,12 @@
   .swiper-pagination {
     bottom: 45%;
     right: 22%;
+  }
+
+  @include media-breakpoint-down(lg){
+    & + div, & + section {
+      padding-top: 89px;
+    }
   }
 }
 

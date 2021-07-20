@@ -25,24 +25,14 @@ jQuery(document).ready(function ($) {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 20
       },
       // when window width is >= 480px
       480: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      // when window width is >= 768px
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      // when window width is >= 991px
-      991: {
         slidesPerView: 4,
         spaceBetween: 20
-      },
+      }
     },
     on: {
       init: function () {
@@ -229,7 +219,7 @@ jQuery(document).ready(function ($) {
 });
 
 
-function changeEventContainerPosition(){
+function changeEventContainerPosition() {
   var element_position = $('#footer').offset().top;
   var screen_height = $(window).height();
   var activation_offset = 0.5;//determines how far up the the page the element needs to be before triggering the function
@@ -240,9 +230,9 @@ function changeEventContainerPosition(){
   var element_in_view = y_scroll_pos > activation_point;
   var has_reached_bottom_of_page = max_scroll_height <= y_scroll_pos && !element_in_view;
 
-  if(element_in_view || has_reached_bottom_of_page) {
-      //Do something
-      $('.event-details__container').css('bottom', '450px')
+  if (element_in_view || has_reached_bottom_of_page) {
+    //Do something
+    $('.event-details__container').css('bottom', '450px')
   }
 }
 
@@ -258,7 +248,7 @@ function scrollFunction(topButton, headerNav) {
   if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
     $('.event-details__container').css('bottom', '50px');
     changeEventContainerPosition()
-  }else {
+  } else {
     $('.event-details__container').css('bottom', '-250px')
   }
 }
