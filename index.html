@@ -92,16 +92,22 @@
                         <i class="icon icon-user"></i>
                     </a>
                     <div class="dropdown-menu header__mobile-nav__account-dropdown" aria-labelledby="changeLang">
-                        <a class="btn utl-btn-primary" href="#">إنشاء حساب جديد</a>
-                        <a class="btn utl-btn-outline-primary" href="#">تسجيل الدخول</a>
+                        <!-- <a class="btn utl-btn-primary" href="#">إنشاء حساب جديد</a> -->
+                        <a class="btn utl-btn-primary" href="#">تسجيل الدخول</a>
                     </div>
                 </div>
             </div>
+            <form action="#" id="searchMobile" class="header__nav__search__form header__nav__search__form--active">
+                <input type="text" class="form-control header__nav__search__form__input" placeholder="كلمة البحث" />
+                <a href="#" class="header__nav__search__form__button" id="openSearchBtn">
+                    <i class="icon icon-search"></i>
+                </a>
+            </form>
         </div>
         <div class="header__main">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 header__main__swiper">
                         <div class="swiper-container header__swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -183,7 +189,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 header__main__image">
                         <img class="header__main__image" src="assets/img/header-bg.png" alt="">
                     </div>
                 </div>
@@ -192,7 +198,7 @@
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                     </div>
-                    <!-- <div class="swiper-pagination"></div> -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
 
@@ -842,115 +848,75 @@
                 </ul>
 
                 <div class="tab-content">
-                    <div id="gallery-tab-images" class="tab-pane fade" role="tabpanel" aria-labelledby="contact-tab-1">
-                        <div class="swiper-container media-center__swiper__images">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link" href="assets/img/card.png">
-                                        <img src="assets/img/icon/image.svg" class="media-center__tabs__item__icon" alt="">
-                                        <img class="media-center__tabs__item__image" src="assets/img/media.png"
-                                            alt="gallery">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link" href="assets/img/card.png">
-                                        <img src="assets/img/icon/image.svg" class="media-center__tabs__item__icon" alt="">
-                                        <img class="media-center__tabs__item__image" src="assets/img/media.png"
-                                            alt="gallery">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link" href="assets/img/card.png">
-                                        <img src="assets/img/icon/image.svg" class="media-center__tabs__item__icon" alt="">
-                                        <img class="media-center__tabs__item__image" src="assets/img/media.png"
-                                            alt="gallery">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link" href="assets/img/card.png">
-                                        <img src="assets/img/icon/image.svg" class="media-center__tabs__item__icon" alt="">
-                                        <img class="media-center__tabs__item__image" src="assets/img/media.png"
-                                            alt="gallery">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link" href="assets/img/card.png">
-                                        <img src="assets/img/icon/image.svg" class="media-center__tabs__item__icon" alt="">
-                                        <img class="media-center__tabs__item__image" src="assets/img/media.png"
-                                            alt="gallery">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link" href="assets/img/card.png">
-                                        <img src="assets/img/icon/image.svg" class="media-center__tabs__item__icon" alt="">
-                                        <img class="media-center__tabs__item__image" src="assets/img/media.png"
-                                            alt="gallery">
-                                    </a>
-                                </div>
-
-
-                            </div>
-                            <div class="text-center mt-4">
-                                <button class="btn utl-btn-outline-primary">مشاهدة جميع الأحداث والفاعليات</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="gallery-tab-video" class="tab-pane fade active show" role="tabpanel"
-                        aria-labelledby="contact-tab-1">
+                    <div id="gallery-tab-video" class="tab-pane active" role="tabpanel" aria-labelledby="contact-tab-1">
                         <div class="swiper-container media-center__swiper__video">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link" href="assets/img/card.png"
+                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
+                                        href="assets/img/card.png"
                                         class="media-center__grid-item media-center__grid-item--1">
-                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon" alt="">
+                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon"
+                                            alt="">
                                         <img class="media-center__tabs__item__image" src="assets/img/card.png"
                                             alt="gallery">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link" href="assets/img/card.png"
+                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
+                                        href="assets/img/card.png"
                                         class="media-center__grid-item media-center__grid-item--1">
-                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon" alt="">
+                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon"
+                                            alt="">
                                         <img class="media-center__tabs__item__image" src="assets/img/card.png"
                                             alt="gallery">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link" href="assets/img/card.png"
+                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
+                                        href="assets/img/card.png"
                                         class="media-center__grid-item media-center__grid-item--1">
-                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon" alt="">
+                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon"
+                                            alt="">
                                         <img class="media-center__tabs__item__image" src="assets/img/card.png"
                                             alt="gallery">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link" href="assets/img/card.png"
+                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
+                                        href="assets/img/card.png"
                                         class="media-center__grid-item media-center__grid-item--1">
-                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon" alt="">
+                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon"
+                                            alt="">
                                         <img class="media-center__tabs__item__image" src="assets/img/card.png"
                                             alt="gallery">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link" href="assets/img/card.png"
+                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
+                                        href="assets/img/card.png"
                                         class="media-center__grid-item media-center__grid-item--1">
-                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon" alt="">
+                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon"
+                                            alt="">
                                         <img class="media-center__tabs__item__image" src="assets/img/card.png"
                                             alt="gallery">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link" href="assets/img/card.png"
+                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
+                                        href="assets/img/card.png"
                                         class="media-center__grid-item media-center__grid-item--1">
-                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon" alt="">
+                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon"
+                                            alt="">
                                         <img class="media-center__tabs__item__image" src="assets/img/card.png"
                                             alt="gallery">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link" href="assets/img/card.png"
+                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
+                                        href="assets/img/card.png"
                                         class="media-center__grid-item media-center__grid-item--1">
-                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon" alt="">
+                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon"
+                                            alt="">
                                         <img class="media-center__tabs__item__image" src="assets/img/card.png"
                                             alt="gallery">
                                     </a>
@@ -963,6 +929,71 @@
                             <div class="text-center">
                                 <button class="btn utl-btn-outline-primary media-center__show-more-btn">مشاهدة جميع
                                     الأحداث والفاعليات</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="gallery-tab-images" class="tab-pane" role="tabpanel" aria-labelledby="contact-tab-1">
+                        <div class="swiper-container media-center__swiper__images">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
+                                        href="assets/img/card.png">
+                                        <img src="assets/img/icon/image.svg" class="media-center__tabs__item__icon"
+                                            alt="">
+                                        <img class="media-center__tabs__item__image" src="assets/img/media.png"
+                                            alt="gallery">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
+                                        href="assets/img/card.png">
+                                        <img src="assets/img/icon/image.svg" class="media-center__tabs__item__icon"
+                                            alt="">
+                                        <img class="media-center__tabs__item__image" src="assets/img/media.png"
+                                            alt="gallery">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
+                                        href="assets/img/card.png">
+                                        <img src="assets/img/icon/image.svg" class="media-center__tabs__item__icon"
+                                            alt="">
+                                        <img class="media-center__tabs__item__image" src="assets/img/media.png"
+                                            alt="gallery">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
+                                        href="assets/img/card.png">
+                                        <img src="assets/img/icon/image.svg" class="media-center__tabs__item__icon"
+                                            alt="">
+                                        <img class="media-center__tabs__item__image" src="assets/img/media.png"
+                                            alt="gallery">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
+                                        href="assets/img/card.png">
+                                        <img src="assets/img/icon/image.svg" class="media-center__tabs__item__icon"
+                                            alt="">
+                                        <img class="media-center__tabs__item__image" src="assets/img/media.png"
+                                            alt="gallery">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
+                                        href="assets/img/card.png">
+                                        <img src="assets/img/icon/image.svg" class="media-center__tabs__item__icon"
+                                            alt="">
+                                        <img class="media-center__tabs__item__image" src="assets/img/media.png"
+                                            alt="gallery">
+                                    </a>
+                                </div>
+
+
+                            </div>
+                            <div class="text-center mt-4">
+                                <button class="btn utl-btn-outline-primary">مشاهدة جميع الأحداث والفاعليات</button>
                             </div>
                         </div>
                     </div>
@@ -1334,7 +1365,7 @@
     <section class="contact">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6 contact__be-in-touch">
                     <h2 class="heading-2 ">كن على تواصل معنا</h2>
                     <h3>اشترك في النشرة البريدية ليصلك احدث الأخبار</h3>
                 </div>

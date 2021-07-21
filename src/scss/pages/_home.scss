@@ -91,6 +91,10 @@
   &__cards {
     position: relative;
     width: 140%;
+
+    .swiper-pagination {
+      position: static;
+    }
   }
 
   &__image-container {
@@ -175,7 +179,7 @@
       }
 
       &__icon {
-        width: 100px;
+        width: 45px;
         height: 100px;
         position: absolute;
         top: 50%;
@@ -350,5 +354,11 @@
     position: absolute;
     left: 17px;
     top: 1px;
+  }
+
+  @include media-breakpoint-down(sm){
+    &__be-in-touch {
+      margin-bottom: 20px;
+    }
   }
 }
