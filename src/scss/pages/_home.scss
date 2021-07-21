@@ -326,10 +326,12 @@
     top: 0;
     bottom: 0;
     #{$left}: 0;
-    clip-path: polygon(49% 0, 100% 0%, 100% 100%, 0% 100%);
-    background-color: #d2ac36;
-    opacity: 0.1;
-    width: 70%;
+    // clip-path: polygon(49% 0, 100% 0%, 100% 100%, 0% 100%);
+    // background-color: #d2ac36;
+    background-image: url(../img/partner-bg.png);
+    background-size: cover;
+    width: 100%;
+    opacity: 0.56;
   }
 
   @include media-breakpoint-down(sm) {
