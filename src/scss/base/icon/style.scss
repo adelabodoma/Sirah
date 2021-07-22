@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?6kdn88');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?6kdn88#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?6kdn88') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?6kdn88') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?6kdn88##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?16q9ee');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?16q9ee#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?16q9ee') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?16q9ee') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?16q9ee##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,6 +27,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-eye-2 {
+  &:before {
+    content: $icon-eye-2; 
+  }
+}
+.icon-home {
+  &:before {
+    content: $icon-home; 
+  }
+}
+.icon-mark {
+  &:before {
+    content: $icon-mark; 
+  }
+}
+.icon-top-arrow {
+  &:before {
+    content: $icon-top-arrow; 
+  }
+}
+.icon-calender-2 {
+  &:before {
+    content: $icon-calender-2; 
+  }
+}
+.icon-download {
+  &:before {
+    content: $icon-download; 
+  }
+}
 .icon-envelope {
   &:before {
     content: $icon-envelope; 
@@ -343,7 +373,8 @@
 }
 .icon-down-arrow {
   &:before {
-    content: $icon-down-arrow; 
+    content: $icon-down-arrow;     
+    color: #a0a1a2;
   }
 }
 .icon-share {

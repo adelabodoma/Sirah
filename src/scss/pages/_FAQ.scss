@@ -35,7 +35,7 @@
         .FAQ__accordion__title__button {
           background-color: $primary-color;
           &::after {
-            @include addIcon($icon-mins, 3px);
+            @include addIcon($icon-top-arrow, 13px);
             color: $color-white;
           }
         }
@@ -55,7 +55,7 @@
         justify-content: center;
         // background-color: $primary-color;
         &::after {
-          @include addIcon($icon-plus, 11px);
+          @include addIcon($icon-down-arrow, 11px);
         }
       }
     }
