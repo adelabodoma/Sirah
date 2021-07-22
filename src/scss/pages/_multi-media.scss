@@ -6,7 +6,7 @@
     }
 
     &__icon {
-
+        width: 45px;
     }
 
     &__title {
@@ -21,5 +21,9 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .history__cards {
+        margin-top: 0;
     }
 }

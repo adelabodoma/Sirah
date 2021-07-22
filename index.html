@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css" />
     <link rel="stylesheet" href="assets/css/style-rtl.min.css" />
@@ -54,7 +55,7 @@
                     </div>
                     <div class="col-md-5 header__nav__access">
                         <form action="#" class="header__nav__search__form">
-                            <input type="text" class="form-control header__nav__search__form__input"
+                            <input type="text" class="form-control header__nav__search__form__input form-input"
                                 placeholder="كلمة البحث" />
                             <a href="#" class="header__nav__search__form__button" id="openSearchBtn">
                                 <i class="icon icon-search"></i>
@@ -107,7 +108,7 @@
         <div class="header__main">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 header__main__swiper">
+                    <div class="col-md-6 header__main__swiper wow fadeInLeft"  data-wow-delay="1s">
                         <div class="swiper-container header__swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -189,7 +190,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 header__main__image">
+                    <div class="col-md-6 header__main__image wow fadeInRight"  data-wow-delay="1s">
                         <img class="header__main__image" src="assets/img/header-bg.png" alt="">
                     </div>
                 </div>
@@ -304,11 +305,11 @@
     <section class="about-us">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6 about-us__image">
+                <div class="col-md-6 about-us__image wow slideInRight">
                     <img class="w-100" src="assets/img/about.png" alt="About Us">
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 wow slideInLeft">
                     <h2 class="heading-title about-us__title">من نحن</h2>
                     <p>
                         حملةٌ لنشر مليار (1,000,000,000) نسخةٍ حول العالم من كتيب السيرة
@@ -330,13 +331,13 @@
 
     <!-- RELEASES US SECTION START -->
     <section class="releases">
-        <h2 class="heading-title text-center mb-4">الإصدارات</h2>
-        <p>نص بديل للوصف نص بديل للوصف نص بديل للوصف نص بديل للوصف</p>
+        <h2 class="heading-title text-center mb-4 wow fadeInDown">الإصدارات</h2>
+        <p class=" wow fadeInTop">نص بديل للوصف نص بديل للوصف نص بديل للوصف نص بديل للوصف</p>
 
         <div class="container">
             <div class="releases__cards">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow fadeInDown">
                         <div class="card releases__card">
                             <a href="" class="position-relative">
                                 <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
@@ -367,7 +368,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow fadeInDown" data-wow-delay=".2s">
                         <div class="card releases__card">
                             <a href="" class="position-relative">
                                 <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
@@ -398,7 +399,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow fadeInDown" data-wow-delay=".3s">
                         <div class="card releases__card">
                             <a href="" class="position-relative">
                                 <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
@@ -429,7 +430,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow fadeInDown" data-wow-delay=".4s">
                         <div class="card releases__card">
                             <a href="" class="position-relative">
                                 <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
@@ -460,7 +461,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow fadeInDown" data-wow-delay=".5s">
                         <div class="card releases__card">
                             <a href="" class="position-relative">
                                 <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
@@ -491,7 +492,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow fadeInDown" data-wow-delay=".6s">
                         <div class="card releases__card">
                             <a href="" class="position-relative">
                                 <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
@@ -522,7 +523,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow fadeInDown" data-wow-delay=".7s">
                         <div class="card releases__card">
                             <a href="" class="position-relative">
                                 <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
@@ -553,7 +554,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow fadeInDown" data-wow-delay=".8s">
                         <div class="card releases__card">
                             <a href="" class="position-relative">
                                 <img class="card-img-top" src="assets/img/card.png" alt="Card image cap">
@@ -685,7 +686,7 @@
         <div class="container">
             <div class="news__cards">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay=".6s">
                         <div class="card news__card">
                             <a href="" class="position-relative">
                                 <img class="card-img" src="assets/img/news.png" alt="Card image cap">
@@ -702,7 +703,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay=".7s">
                         <div class="card news__card">
                             <a href="" class="position-relative">
                                 <img class="card-img" src="assets/img/news.png" alt="Card image cap">
@@ -719,7 +720,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay=".8s">
                         <div class="card news__card">
                             <a href="" class="position-relative">
                                 <img class="card-img" src="assets/img/news.png" alt="Card image cap">
@@ -753,7 +754,7 @@
 
         <div class="container">
             <div class="row mt-5">
-                <div class="col-md-6 mb-5">
+                <div class="col-md-6 mb-5 wow bounceIn" data-wow-delay=".6s">
                     <div class="row align-items-center activities__card">
                         <div class="col-md-4">
                             <img class="w-100" src="assets/img/activities-card-0.png" alt="Activities">
@@ -770,7 +771,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-5">
+                <div class="col-md-6 mb-5 wow bounceIn" data-wow-delay=".7s">
                     <div class="row align-items-center activities__card">
                         <div class="col-md-4">
                             <img class="w-100" src="assets/img/activities-card-0.png" alt="Activities">
@@ -787,7 +788,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-5">
+                <div class="col-md-6 mb-5 wow bounceIn" data-wow-delay=".8s">
                     <div class="row align-items-center activities__card">
                         <div class="col-md-4">
                             <img class="w-100" src="assets/img/activities-card-0.png" alt="Activities">
@@ -804,7 +805,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-5">
+                <div class="col-md-6 mb-5 wow bounceIn" data-wow-delay=".9s">
                     <div class="row align-items-center activities__card">
                         <div class="col-md-4">
                             <img class="w-100" src="assets/img/activities-card-0.png" alt="Activities">
@@ -852,70 +853,70 @@
                         <div class="swiper-container media-center__swiper__video">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
-                                        href="assets/img/card.png"
+                                    <a data-fancybox="media-videos" class="media-center__tabs__item__link"
+                                        href="assets/img/video.mp4"
                                         class="media-center__grid-item media-center__grid-item--1">
-                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon"
+                                        <img src="assets/img/icon/video.svg" class="media-center__tabs__item__icon"
                                             alt="">
                                         <img class="media-center__tabs__item__image" src="assets/img/card.png"
                                             alt="gallery">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
-                                        href="assets/img/card.png"
+                                    <a data-fancybox="media-videos" class="media-center__tabs__item__link"
+                                        href="assets/img/video.mp4"
                                         class="media-center__grid-item media-center__grid-item--1">
-                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon"
+                                        <img src="assets/img/icon/video.svg" class="media-center__tabs__item__icon"
                                             alt="">
                                         <img class="media-center__tabs__item__image" src="assets/img/card.png"
                                             alt="gallery">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
-                                        href="assets/img/card.png"
+                                    <a data-fancybox="media-videos" class="media-center__tabs__item__link"
+                                        href="assets/img/video.mp4"
                                         class="media-center__grid-item media-center__grid-item--1">
-                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon"
+                                        <img src="assets/img/icon/video.svg" class="media-center__tabs__item__icon"
                                             alt="">
                                         <img class="media-center__tabs__item__image" src="assets/img/card.png"
                                             alt="gallery">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
-                                        href="assets/img/card.png"
+                                    <a data-fancybox="media-videos" class="media-center__tabs__item__link"
+                                        href="assets/img/video.mp4"
                                         class="media-center__grid-item media-center__grid-item--1">
-                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon"
+                                        <img src="assets/img/icon/video.svg" class="media-center__tabs__item__icon"
                                             alt="">
                                         <img class="media-center__tabs__item__image" src="assets/img/card.png"
                                             alt="gallery">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
-                                        href="assets/img/card.png"
+                                    <a data-fancybox="media-videos" class="media-center__tabs__item__link"
+                                        href="assets/img/video.mp4"
                                         class="media-center__grid-item media-center__grid-item--1">
-                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon"
+                                        <img src="assets/img/icon/video.svg" class="media-center__tabs__item__icon"
                                             alt="">
                                         <img class="media-center__tabs__item__image" src="assets/img/card.png"
                                             alt="gallery">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
-                                        href="assets/img/card.png"
+                                    <a data-fancybox="media-videos" class="media-center__tabs__item__link"
+                                        href="assets/img/video.mp4"
                                         class="media-center__grid-item media-center__grid-item--1">
-                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon"
+                                        <img src="assets/img/icon/video.svg" class="media-center__tabs__item__icon"
                                             alt="">
                                         <img class="media-center__tabs__item__image" src="assets/img/card.png"
                                             alt="gallery">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fancybox="media-images" class="media-center__tabs__item__link"
-                                        href="assets/img/card.png"
+                                    <a data-fancybox="media-videos" class="media-center__tabs__item__link"
+                                        href="assets/img/video.mp4"
                                         class="media-center__grid-item media-center__grid-item--1">
-                                        <img src="assets/img/icon/play.svg" class="media-center__tabs__item__icon"
+                                        <img src="assets/img/icon/video.svg" class="media-center__tabs__item__icon"
                                             alt="">
                                         <img class="media-center__tabs__item__image" src="assets/img/card.png"
                                             alt="gallery">
@@ -1512,7 +1513,22 @@
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/wow.min.js"></script>
+
     <script src="assets/js/app.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                boxClass: 'wow',      // default
+                animateClass: 'animated', // default
+                offset: 0,          // default
+                mobile: true,       // default
+                live: true        // default
+            }
+        )
+        wow.init();
+    </script>
+
 </body>
 
 </html>
