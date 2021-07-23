@@ -218,12 +218,24 @@ jQuery(document).ready(function ($) {
     console.log(event);
   });
 
-  $('.show-password').on('click', function(){
+  $('.show-password').on('click', function () {
     const input = $(this).siblings('.form-control');
-    const attr = $(input).attr('type');    
+    const attr = $(input).attr('type');
     $(input).attr('type', attr === 'password' ? 'text' : 'password');
     $(this).toggleClass('utl-color-primary');
   })
+
+  // WOW JS 
+  wow = new WOW(
+    {
+      boxClass: 'wow',      // default
+      animateClass: 'animated', // default
+      offset: 0,          // default
+      mobile: true,       // default
+      live: true        // default
+    }
+  )
+  wow.init();
 });
 
 function changeEventContainerPosition() {
