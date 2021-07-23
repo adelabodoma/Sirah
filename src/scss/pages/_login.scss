@@ -8,13 +8,19 @@
     @include media-breakpoint-down(sm) {
       width: 90%;
     }
+
+    .show-password {
+      position: absolute;
+      left: 10px;
+      top: 50px;
+      color: #a0a1a2;
+    }
   }
 }
 
-
 .success {
-    background-image: url(../img/modal-bg.png);
-    height: calc(100vh - 109px);
-    background-size: cover;
-    position: relative;
+  background-image: url(../img/modal-bg.png);
+  height: calc(100vh - 109px);
+  background-size: cover;
+  position: relative;
 }

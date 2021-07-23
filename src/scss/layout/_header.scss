@@ -6,7 +6,7 @@
     color: $color-grey;
     padding: 25px 0;
     box-shadow: $main-box-shadow;
-    border-bottom: 1px solid #E2E2E2;
+    // border-bottom: 1px solid #E2E2E2;
 
     &__logo {
       margin-#{$right}: 40px;
@@ -98,6 +98,10 @@
           color: $primary-color;
         }
       }
+    }
+
+    &--home {
+      margin-bottom: 20px;
     }
   }
 
@@ -193,7 +197,7 @@
 
     &__image {
       position: relative;
-      top: 0;
+      top: -10px;
     }
 
     &__content {
@@ -328,8 +332,9 @@
     overflow: hidden;
   }
 
-  @include media-breakpoint-down(lg){
-    & + div, & + section {
+  @include media-breakpoint-down(lg) {
+    & + div,
+    & + section {
       padding-top: 89px;
     }
   }

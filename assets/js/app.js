@@ -15,23 +15,6 @@ jQuery(document).ready(function ($) {
     },
   });
 
-  // const headerSwiper_2 = new Swiper(".header__swiper_2", {
-  //   slidesPerView: 1,
-  //   spaceBetween: 0,
-  //   // pagination: {
-  //   //   el: ".header .swiper-pagination",
-  //   //   clickable: true,
-  //   // },
-  //   direction: "vertical",
-  //   navigation: {
-  //     nextEl: ".header__navigation .swiper-button-next",
-  //     prevEl: ".header__navigation .swiper-button-prev",
-  //   },
-  //   thumbs: {
-  //     swiper: headerSwiper,
-  //   },
-  // });
-
   const versionSliders = new Swiper(".version__slider", {
     slidesPerView: 4,
     spaceBetween: 10,
@@ -90,6 +73,7 @@ jQuery(document).ready(function ($) {
       },
     },
   });
+
   const MediaSwiperImages = new Swiper(".media-center__swiper__images",
     {
       slidesPerView: 5,
@@ -185,9 +169,6 @@ jQuery(document).ready(function ($) {
       "#openSearchBtn",
       "#openSearchBtnWithMobile",
     ];
-    // var $trigger = $(".header__nav__search");
-    // var $trigger2 = $("#openSearchBtn");
-    // var $trigger3 = $('#openSearchBtnWithMobile')
 
     if ($(event.target).closest(ignore.join(",")).length === 0) {
       $(".header__nav__search").hide();
@@ -202,13 +183,7 @@ jQuery(document).ready(function ($) {
       .toggleClass("mt-3")
       .toggleClass("h-auto")
       .toggleClass("w-100");
-    // $('body').addClass('backdrop');
   });
-
-  // $('#closeSearchBtn').on('click', () => {
-  //   $('.header__nav__search').toggle();
-  //   $('body').removeClass('backdrop');
-  // })
 
   const topButton = document.getElementById("gotToTopButton");
   const headerNav = document.querySelector(".header__mobile-nav");
@@ -242,6 +217,13 @@ jQuery(document).ready(function ($) {
   $("#FAQAccordion").on("hidden.bs.collapse", function (event) {
     console.log(event);
   });
+
+  $('.show-password').on('click', function(){
+    const input = $(this).siblings('.form-control');
+    const attr = $(input).attr('type');    
+    $(input).attr('type', attr === 'password' ? 'text' : 'password');
+    $(this).toggleClass('utl-color-primary');
+  })
 });
 
 function changeEventContainerPosition() {
