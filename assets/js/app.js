@@ -5,6 +5,8 @@ jQuery(document).ready(function ($) {
     freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
+    allowTouchMove: false,
+    autoplay: true,
     pagination: {
       el: ".header .swiper-pagination",
       clickable: true,
@@ -259,7 +261,7 @@ function changeEventContainerPosition() {
 
 function scrollFunction(topButton, headerNav) {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    topButton.style.display = "block";
+    topButton.style.display = "flex";
     headerNav.style.top = "0px";
   } else {
     topButton.style.display = "none";

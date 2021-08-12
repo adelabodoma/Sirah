@@ -22,7 +22,15 @@
         color: $secondary-color;
 
         h2:first-child {
-            margin-left: 20px;
+            margin-#{$right}: 20px;
         }
+    }
+
+    &__icon {
+        margin-#{$right}: 8px ;
+    }
+
+    &__buy-button {
+        margin-#{$right}: 18px ;
     }
 }

@@ -56,7 +56,7 @@
 
         &__button {
           font-size: rem(20);
-          margin-left: 20px;
+          margin-#{$right}: 20px;
           background: $main-bg-gradient;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -81,7 +81,7 @@
           }
           .header__nav__search__form__input {
             display: block;
-            margin-left: -42px;
+            margin-#{$right}: -42px;
             width: calc(100% + 42px);
           }
         }
@@ -173,7 +173,7 @@
     &__search-button {
       font-size: rem(18);
       color: $primary-color;
-      margin-left: 15px;
+      margin-#{$right}: 15px;
     }
 
     #searchMobile {
@@ -192,7 +192,7 @@
 
     &__buttons {
       .btn {
-        margin-left: 10px;
+        margin-#{$right}: 10px;
       }
     }
 
@@ -209,6 +209,7 @@
 
       &__item {
         width: 68%;
+        margin-#{$right}: auto
       }
 
       &__heading {
@@ -256,7 +257,7 @@
 
     @include media-breakpoint-down(lg) {
       height: calc(100vh + 89 + 85px);
-      padding-top: 85px;
+      padding-top: 0;
     }
 
     @include media-breakpoint-down(md) {
@@ -290,6 +291,12 @@
     padding: 2px 0;
     bottom: 30px;
 
+    @include media-breakpoint-down(sm){
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
     .swiper-button-next,
     .swiper-button-prev {
       width: 45px;
@@ -322,8 +329,9 @@
   }
 
   .swiper-pagination {
-    left: 50%;
+   
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
 
@@ -340,15 +348,19 @@
     background: none;
   }
 
-  .header__top-nav__account.dropdown {
-    text-align: end;
-  }
-
-  .header__top-nav {
+  &__top-nav {
     background: #faf8f1;
     height: 50px;
     display: flex;
     align-items: center;
+
+    &__lang-dropdown {
+      text-align: #{$left};
+    }
+
+    &__account.dropdown {
+      text-align: end;
+    }
 }
 
   @include media-breakpoint-down(lg) {
@@ -382,9 +394,9 @@
 
   .icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: rotate(180deg) translate(9px, 5px);
+    // top: 50%;
+    // #{$right}: 50%;
+    transform: rotate(180deg)
   }
 }
 

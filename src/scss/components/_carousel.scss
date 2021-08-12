@@ -18,7 +18,7 @@
   // height: 50px;
   position: absolute;
   top: 50%;
-  #{$right}: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 105%;
   display: flex;
@@ -55,7 +55,7 @@
   & > span {
     width: 10px;
     height: 10px;
-    margin-left: 5px;
+    margin-#{$right}: 5px;
 
     &.swiper-pagination-bullet-active {
       background-color: $primary-color;
