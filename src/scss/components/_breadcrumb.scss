@@ -16,13 +16,19 @@
     &__item {
       display: flex;
       align-items: center;
+      cursor: pointer;
 
       &:not(:last-child) {
         margin-#{$right}: 30px;
         position: relative;
 
         &::after {
-          @include addIcon($icon-left-arrow, 10px);
+          @if $direction == rtl {
+            @include addIcon($icon-left-arrow, 10px);
+          } @else {
+            @include addIcon($icon-right-arrow, 10px);
+          }
+
           #{$right}: -18px;
           top: 8px;
           color: #a0a1a2;
@@ -51,7 +57,7 @@
       align-items: center;
 
       .icon {
-        margin-#{right}: 7px
+        margin-#{$right}: 7px;
       }
     }
 

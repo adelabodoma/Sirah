@@ -6,9 +6,13 @@
   appearance: none;
   background-image: url(../img/icon/arrow-down.svg);
   background-repeat: no-repeat;
-  background-position: 18px;
-  // border: 1px solid transparent;
   border-radius: 6px;
+
+  @if $direction == rtl {
+    background-position: 5%;
+  }@else {
+    background-position: 95%;
+  }
 
   &:focus {
     border-color: inherit;
