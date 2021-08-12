@@ -184,7 +184,8 @@
   }
 
   &__main {
-    height: calc(100vh - 103px);
+    // height: calc(100vh - 103px);
+    height: calc(100vh - 280px);
     background-color: $color-white;
     // margin-top: 30px;
     position: relative;
@@ -331,6 +332,24 @@
     height: 100%;
     overflow: hidden;
   }
+
+  .social-links .icon {
+    width: 23px;
+    height: 23px;
+    color: #1c6053;
+    background: none;
+  }
+
+  .header__top-nav__account.dropdown {
+    text-align: end;
+  }
+
+  .header__top-nav {
+    background: #faf8f1;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
 
   @include media-breakpoint-down(lg) {
     & + div,

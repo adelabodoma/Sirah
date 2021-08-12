@@ -35,14 +35,19 @@ jQuery(document).ready(function ($) {
       },
     },
     on: {
-      init: function () { },
-      resize: function () { },
+      init: function () {},
+      resize: function () {},
     },
   });
 
   const MediaSwiperVideo = new Swiper(".media-center__swiper__video", {
     observer: true,
     spaceBetween: 10,
+    rtl: true,
+    lazy: true,
+    loop: true,
+    centeredSlides: true,
+
     navigation: {
       nextEl: ".media-center__swiper__video__controls .swiper-button-next",
       prevEl: ".media-center__swiper__video__controls .swiper-button-prev",
@@ -74,37 +79,35 @@ jQuery(document).ready(function ($) {
     },
   });
 
-  const MediaSwiperImages = new Swiper(".media-center__swiper__images",
-    {
-      slidesPerView: 5,
-      spaceBetween: 10,
-      observer: true,
-      observeParents: true,
+  const MediaSwiperImages = new Swiper(".media-center__swiper__images", {
+    slidesPerView: 5,
+    spaceBetween: 10,
+    observer: true,
+    observeParents: true,
 
-      breakpoints: {
-        // when window width is >= 320px
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        // when window width is >= 480px
-        480: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        // when window width is >= 768px
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        // when window width is >= 991px
-        991: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-        },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
       },
-    }
-  );
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // when window width is >= 991px
+      991: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+  });
 
   const sliderSelectors = [
     ".partners__swiper",
@@ -144,8 +147,8 @@ jQuery(document).ready(function ($) {
         },
       },
       on: {
-        init: function () { },
-        resize: function () { },
+        init: function () {},
+        resize: function () {},
       },
     });
   });
@@ -218,28 +221,26 @@ jQuery(document).ready(function ($) {
     console.log(event);
   });
 
-  $('.show-password').on('click', function () {
-    const input = $(this).siblings('.form-control');
-    const attr = $(input).attr('type');
-    $(input).attr('type', attr === 'password' ? 'text' : 'password');
-    $(this).toggleClass('utl-color-primary');
-  })
+  $(".show-password").on("click", function () {
+    const input = $(this).siblings(".form-control");
+    const attr = $(input).attr("type");
+    $(input).attr("type", attr === "password" ? "text" : "password");
+    $(this).toggleClass("utl-color-primary");
+  });
 
-  // WOW JS 
-  wow = new WOW(
-    {
-      boxClass: 'wow',      // default
-      animateClass: 'animated', // default
-      offset: 0,          // default
-      mobile: true,       // default
-      live: true        // default
-    }
-  )
+  // WOW JS
+  wow = new WOW({
+    boxClass: "wow", // default
+    animateClass: "animated", // default
+    offset: 0, // default
+    mobile: true, // default
+    live: true, // default
+  });
   wow.init();
 });
 
 function changeEventContainerPosition() {
-  var element_position = $("#footer").offset().top;
+  var element_position = $("#footer").offset() && $("#footer").offset().top;
   var screen_height = $(window).height();
   var activation_offset = 0.5; //determines how far up the the page the element needs to be before triggering the function
   var activation_point = element_position - screen_height * activation_offset;
