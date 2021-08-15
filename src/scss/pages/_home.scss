@@ -238,6 +238,18 @@
   .media-center__swiper__video__controls {
     height: 50px;
   }
+
+  @include media-breakpoint-up(lg){
+    .swiper-slide {
+      transform: scale(.79);
+    }
+    .swiper-slide-active {
+      transform: scale(1.08);
+      margin-right: 40px!important;
+      margin-left: 30px!important;
+    }
+
+  }
 }
 
 .history {
